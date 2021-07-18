@@ -1,0 +1,143 @@
+.header_top{
+    background-color: rgba(1,4,20,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_topLeft{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .header_topLeft > a {
+        color: white;
+        text-shadow: 0 0 #fff;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        line-height:60px;
+        margin-right: 8%;
+    }
+
+    .header_topLeft > a:hover {
+        text-decoration: underline;
+    }
+
+.header_topRight{
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+    .header_topRight > a{
+        color: white;
+        text-shadow: 0 0 #fff;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        line-height:60px;
+        margin-left: 8%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header_topRight > button{
+        color: white;
+        text-shadow: 0 0 #fff;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        line-height:60px;
+        margin-left: 8%;
+        display: flex;
+        align-items: center;
+        background-color: inherit;
+        border: none;
+    }
+
+    .header_topRight > button > img{
+        max-width: 40px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .header_topRight > a:hover {
+        text-decoration: underline;
+    }
+
+    .header_topRight > button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.header_bottom{
+    background-color: rgba(236,0,140,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bottomLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 8%;
+}
+    .header_bottomLeft > a{
+        color:white;
+        text-shadow: 0 0 #fff;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        margin-right: 1.5rem;
+        display: inline;
+    }
+
+    .header_bottomLeft > a:hover {
+        text-decoration: underline;
+    }
+
+        .header_bottomLeft > a > img{
+            width: 100px;;
+        }
+
+.header_bottomRight{
+    margin-right: 5%
+}
+
+    .header_bottomRight > p{
+        color:white;
+        text-shadow: 0 0 #fff;
+        letter-spacing: 0.3px;
+        font-size: 20px;
+        margin-right: 1.5rem;
+        display: inline;
+    }
+
+@media (max-width: 768px){
+    .header_top{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header_topLeft{
+        display: none;
+    }
+
+    .header_bottom{
+        display: flex;
+    justify-content: flex-start;
+    }
+
+    .header_bottomLeft{
+        margin-left: 0;
+    }
+
+    .header_bottomLeft > a {
+        letter-spacing: 0.1px;
+        font-size: 14px;
+        margin-right: 1.5rem;
+        display: inline;
+    }
+
+    .header_bottomRight > img{
+        max-width: 50px;
+    }
+}

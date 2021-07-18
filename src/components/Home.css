@@ -1,0 +1,190 @@
+.home{
+    padding-bottom:50px;
+}
+
+.home_searchbar{
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin: 0 50px;
+    border-radius: 999px;
+}
+
+.home_searchbar > form{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .home_searchbar > form >  input {
+        border: none;
+        background: transparent;
+        outline-width: 0;
+        width: 100%
+    }
+
+    .home_searchbar > form > button{
+        border:none;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 999px;
+        padding: 10px;
+        min-width: 100px;
+        font-size: 15px;
+        font-weight: 540;
+    }
+
+.home_sort{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 70px;
+    margin-right: auto;
+}
+    .home_sort > span{
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight:600;
+        margin-right: 10px;
+    }
+
+    .home_sort > a {
+        position:absolute;
+        right:70px;
+        font-size: 20px;
+        font-weight: 600;
+        color:white;
+        background-color: rgba(236,0,140,255);
+        padding: 10px;
+        margin-top:10px;
+        border-radius: 15px;
+    }
+
+    .home_sort > a:hover {
+        cursor:pointer;
+        color:black;
+        background-color: rgba(251, 159, 214, 1);
+    }
+
+.home_sort > button{
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eff2f5;;
+    border: 1px solid rgb(249, 249, 249);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:530;
+    max-width: 100%;
+}
+
+.home_sort > button:hover{
+    background: rgb(198, 198, 198);
+    color: black;
+    transform: scale(1.10);
+}
+
+.home_sortActive{
+    font-weight:600 !important;
+    font-size: 20px !important;
+    border: 2px solid rgb(249, 249, 249) !important
+}
+
+.home_content{
+    padding: 0 50px;
+    display: grid;
+    grid-gap: 25px;
+    gap: 50px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.home_wrap{
+padding-top: 50%;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.home_wrap:hover{
+    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+  transform: scale(1.05);
+  border-color: rgba(249, 249, 249, 0.8);
+  font-weight:700;
+  position: relative;
+}
+
+.home_wrap > a > img{
+    inset: 0px;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 500ms ease-in-out 0s;
+    top: 0;
+}
+
+.home_description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.MuiSvgIcon-root{
+    border:1px solid black;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.MuiSvgIcon-root:hover{
+    transform: scale(1.2);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .home_content{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .home_header > img{
+        max-width: 150px;
+        max-height: 100px; 
+    }
+
+    .home_header > p{
+        display: flex;
+        align-items: center;
+        color:white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .home_searchbar > form > button{
+        min-width: 80px;
+    }
+
+    .home_sort > button{
+        margin: 10px 5px 10px 0;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #eff2f5;;
+        border: 1px solid rgb(249, 249, 249);
+        cursor: pointer;
+        font-size: 18px;
+        font-weight:530;
+    }
+
+    .home_sortActive{
+        font-weight:600 !important;
+        font-size: 18px !important;
+        border: 2px solid rgb(249, 249, 249) !important
+    }
+}
